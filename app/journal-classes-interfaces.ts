@@ -13,13 +13,8 @@ module Journal {
       var entry_array = this.entry.split(" ");
       console.log(entry_array);
       var count = entry_array.length;
-      return count; 
+      return count;
     }
   }
-
-
-
-
-
 
 }

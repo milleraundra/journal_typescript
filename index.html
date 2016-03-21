@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <title>Journal</title>
+  </head>
+  <body>
+    <h1>Journal</h1>
+    <div id="form">
+      <form>
+        <label id="title" for="title">Title:</label>
+        <input type="text" name="title" value="">
+
+        <label id="date" for="date">Date:</label>
+        <input type="date" name="date" value="">
+
+        <label id="entry" for="entry">Entry:</label>
+        <input type="text" name="entry" value="">
+
+        <button id="newEntry" type="submit" name="button">Submit:</button>
+      </form>
+    </div>
+
+    <div>
+      <ul id="allEntries">
+        <!-- LI entries here -->
+      </ul>
+    </div>
+  </body>
+</html>
