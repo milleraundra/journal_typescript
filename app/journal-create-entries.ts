@@ -11,21 +11,21 @@ journalEntries.push(new Journal.Entry("Flying Bricks", 03-31-2015, "My sister ca
 console.log(journalEntries);
 
 $(document).ready(function() {
-  for(var journalEntry of journalEntries) {
-    $('#allEntries').append('<li>' + journalEntry.title + '</li>');
-
-  }
-
-  // $('#newEntry').submit(function(event) {
-  //   event.preventDefault();
-  //   console.log("We're in!");
-  //   var title = $('title').val();
-  //   var date = $('date').val();
-  //   var entry = $('entry').val();
-  //   console.log(title);
-  //   console.log(date);
-  //   console.log(entry);
-  //   journalEntries.push(new Entry(title, date, entry);)
-  //   console.log(journalEntries[0]);
-  // });
+  // for(var journalEntry of journalEntries) {
+  //   $('#allEntries').append('<li>' + journalEntry.title + '</li>');
+  //
+  // }
+//form submit is not running this code
+  $('#newEntry').submit(function(event) {
+    event.preventDefault();
+    console.log("We're in!");
+    var title = $('#title').val();
+    var date = $('#date').val();
+    var entry = $('#entry').val();
+    console.log(title);
+    console.log(date);
+    console.log(entry);
+    journalEntries.push(new Journal.Entry(title, date, entry);
+    console.log(journalEntries[0]);
+  });
 });
